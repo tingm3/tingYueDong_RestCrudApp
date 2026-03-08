@@ -48,7 +48,6 @@ public class ClassRosterDaoFileImpl implements ClassRosterDao {
 
     private Student unmarshallStudent(String studentAsText) {
         String[] studentTokens = studentAsText.split(DELIMITER);
-        String studentId = studentTokens[0];
         return new Student(studentTokens[0], studentTokens[1], studentTokens[2], studentTokens[3]);
     }
 
